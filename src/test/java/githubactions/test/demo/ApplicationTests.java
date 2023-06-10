@@ -36,7 +36,7 @@ class ApplicationTests {
     @Test
     void shouldSayHello() throws Exception {
         mockMvc.perform(get("/hello")).andExpect(status().isOk())
-                .andExpect(content().string(containsString("should break v4")));
+                .andExpect(content().string(containsString("Hello, World")));
     }
 
 
